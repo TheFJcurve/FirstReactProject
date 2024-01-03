@@ -1,3 +1,4 @@
+import APIClient from "./apiClient";
 import { Platform } from "./platformServices";
 
 export interface Game {
@@ -7,3 +8,8 @@ export interface Game {
     parent_platforms: { platform: Platform }[]
     metacritic: number;
 } 
+
+
+const gameServices = new APIClient<Game>('/games');
+
+export default gameServices;

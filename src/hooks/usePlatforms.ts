@@ -1,18 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
-import apiClient, { FetchResponse } from "../services/apiClient";
-
-interface Platform {
-    id: number;
-    name: string;
-    slug: string;
-}
+import platformServices from "../services/platformServices";
 
 const usePlaforms = () => useQuery({
     queryKey: ['platforms'],
-    queryFn: () => 
-        apiClient
-            .get<FetchResponse<Platform>>('/platforms/lists/parents')
-            .then((res) => res.data),
+    queryFn: platformServices.getAll,
     staleTime: 1000 * 60 * 60 * 24, // 24 hours
 })
 
