@@ -6,7 +6,7 @@ const useGenres = () => useQuery({
         queryKey: ['genres'],
         queryFn: genreServices.getAll,
         staleTime: 1000 * 60 * 60 * 24, // 24 hours
-        initialData: {count: genres.length, next: null, results: genres}
+        initialData: genres
     });
 
 
