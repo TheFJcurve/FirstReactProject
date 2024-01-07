@@ -1,4 +1,4 @@
-import APIClient from "./apiClient";
+import APIClient from "../services/apiClient";
 
 export interface Platform {
     id: number;

@@ -1,4 +1,4 @@
-import APIClient from "./apiClient";
+import APIClient from "../services/apiClient";
 import { Genre } from "./genreServices";
 import { Platform } from "./platformServices";
 import { Publisher } from "./publisherServices";

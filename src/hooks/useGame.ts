@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import gameServices from '../services/gameServices'
+import gameServices from '../entities/gameServices'
 
 
 const useGame = (slug: string) => useQuery({
