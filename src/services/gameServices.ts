@@ -9,8 +9,7 @@ export interface Game {
     parent_platforms: { platform: Platform }[]
     metacritic: number;
     description_raw: string;
-} 
-
+}
 
 const gameServices = new APIClient<Game>('/games');
 
