@@ -8,7 +8,7 @@ export interface Game {
     name: string;
     slug: string;
     background_image: string;
-    parent_platforms: { platform: Platform }[]
+    parent_platforms:{ platform : Platform}[]
     metacritic: number;
     description_raw: string;
     genres: Genre[];
